@@ -43,10 +43,7 @@ public class SldScripty : MonoBehaviour
         {
             SliderItem();
         }
-        else
-        {
-
-        }
+      
     }
 
     public void ValueMaxFire(int value)
@@ -142,29 +139,32 @@ public class SldScripty : MonoBehaviour
             {
                 _checkLife = true;
                 _gameControl.StopEnemeys(true);
-                _gameControl.HitPlayer(_gameControl._movePerson.transform);
-                do
-                {
-                    RestaureSlider();
-                } while (_mainSlider.value < _mainSlider.maxValue-1f);
-                _checkLife = false;
-
+                _gameControl._hudControl.GameOverON("Seu Álcool em gel acabou, é inseguro continuar na Rua");
 
             }
+
         }
 
         // Update is called once per frame
     }
 
-    void RestaureSlider()
-    {
-        _valueTempSlider = _mainSlider.value + _valeuItem;// valor temporario que o tempo ira crescer
-        _timeLerp += (-_valeuItem * 10) * Time.fixedDeltaTime;
-        _mainSlider.value = _mainSlider.maxValue - _timeLerp;
-        if (_timeLerp <= 0)// se o tempo recarregar mais que o limite
-        {
-            _timeLerp = 0;
-            _recharge = false;
-        }
+    public void RestaureSlider()
+    {        
+            _checkLife = true;
+           // _gameControl.StopEnemeys(true);
+           // _gameControl.HitPlayer(_gameControl._movePerson.transform);
+            do
+            {
+                _valueTempSlider = _mainSlider.value + _valeuItem;// valor temporario que o tempo ira crescer
+                _timeLerp += (-_valeuItem * 10) * Time.fixedDeltaTime;
+                _mainSlider.value = _mainSlider.maxValue - _timeLerp;
+                if (_timeLerp <= 0)// se o tempo recarregar mais que o limite
+                {
+                    _timeLerp = 0;
+                    _recharge = false;
+                }
+            } while (_mainSlider.value < _mainSlider.maxValue - 1f);
+            _checkLife = false;
+        
     }
 }

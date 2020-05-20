@@ -71,11 +71,11 @@ public class HudControl : MonoBehaviour
     {
         if (_gameControl._life != 1)
         {
-            _textBackGame.text = "Resta " + _gameControl._life + " Vidas";
+            _textBackGame.text = "Resta " + _gameControl._life + " doses de álcool para limpar-se";
         }
         else
         {
-            _textBackGame.text = "Resta " + _gameControl._life + " Vida";
+            _textBackGame.text = "Resta " + _gameControl._life + " dose de álcool para limpar-se";
         }
 
     }
@@ -119,11 +119,11 @@ public class HudControl : MonoBehaviour
             _gameControl._sldScripty.PauseSliderON(false);
             _gameControl._sldScripty._mainSlider.value = _gameControl._sldScripty._mainSlider.maxValue;
 
-
         }  
     }
-    public void GameOverON()
+    public void GameOverON(string textGameOver)
     {
+        _panelGameOver[2].GetComponent<Text>().text = "" + textGameOver;
         StartCoroutine(GameOverONTime(.25f));
     }
     IEnumerator GameOverONTime(float waitTime)

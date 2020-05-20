@@ -124,27 +124,21 @@ public class EnemyControl : MonoBehaviour
     }
     public void Stop( bool check)
     {
-        _rigEnemy.isKinematic = check;
+   
         if (check)
         {
             _speed = 0;
+            _circleCollider.enabled = false;
+            _rigEnemy.isKinematic = true;
         }
 
         else
         {
             _speed = _speedL;
+            _circleCollider.enabled = true;
+            _rigEnemy.isKinematic = false;
 
         }
-        _rigEnemy.isKinematic = check;
-        if (_boxCollider != null)
-        {
-            _boxCollider.enabled = !check;
-        }
-        if (_circleCollider != null)
-        {
-            _circleCollider.enabled = !check;
-        }
-
     }
 
     void Turn()

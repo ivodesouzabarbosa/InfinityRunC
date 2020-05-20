@@ -35,6 +35,7 @@ public class ItemScript : MonoBehaviour
             Vector2 screenPosition = _targetCamera.WorldToScreenPoint(_gameControl._movePerson.transform.position);
             transform.localPosition = screenPosition + _gameControl.offset;
             _gameControl._sldScripty.MoveItem(transform.localPosition);
+            _gameControl._sldScripty.RestaureSlider();
             _gameControl._hudControl.Point();             
         }
         if (collision.gameObject.CompareTag("Player") && _fireCheck)

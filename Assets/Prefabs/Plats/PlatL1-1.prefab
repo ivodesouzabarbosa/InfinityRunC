@@ -456,6 +456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: itemPoints
       objectReference: {fileID: 0}
+    - target: {fileID: 915328253452555150, guid: af6f644d9bd3c3348bc768678fd116eb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6f644d9bd3c3348bc768678fd116eb, type: 3}
 --- !u!4 &2603246994301549061 stripped
@@ -530,6 +535,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: itemFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 2063884269988074626, guid: 222068a8ebdb62447a909c5f254110cb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 222068a8ebdb62447a909c5f254110cb, type: 3}
@@ -715,7 +725,7 @@ PrefabInstance:
     - target: {fileID: 2411048081945701987, guid: 4116209487c2310489334737165d0e8c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2411048082363845564, guid: 4116209487c2310489334737165d0e8c,
         type: 3}

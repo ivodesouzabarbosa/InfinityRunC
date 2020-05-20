@@ -32,11 +32,11 @@ public class GameControl : MonoBehaviour
     {
         for (int i = 0; i < _enemyControlList.Count; i++)
         {
-            _enemyControlList[i].Stop(check);           
+            _enemyControlList[i].Stop(check);
         }
     }
 
-   public void ResetPlat()
+    public void ResetPlat()
     {
         for (int i = 0; i < _enemyControlList.Count; i++)
         {
@@ -65,22 +65,25 @@ public class GameControl : MonoBehaviour
         _hudControl._textLife.text = "x" + _life;
     }
 
-   public void HitPlayer(Transform _vRestart)
+    public void HitPlayer(Transform _vRestart)
     {
-        if (_life > 1)//restart
+        _life--;
+        LifeFire(true);
+        if (_life > 0)//restart
         {
             _hudControl.BackGameOn(true);
-            _life--;
-            LifeFire(true);
             _hudControl.TextRestart();
             _hudControl._textLife.text = "x" + _life;
             _movePerson.VectorTempPos(_vRestart);// enviar valores para restart de posição
         }
-        else if (_life == 1)
+        else if (_life <= 0)
         {
             _movePerson.VectorTempPos(_vRestart);
-            _hudControl.GameOverON();
+            _hudControl.GameOverON("Suas doses de álcool para limpar-se, acabou. Logo, não é seguro continuar na rua!");
         }
+    }
+    public void LevelSlideTime (){
+        _sldScriptyFire._mainSlider.maxValue = _sldScriptyFire._mainSlider.maxValue + 1;
     }
 
 

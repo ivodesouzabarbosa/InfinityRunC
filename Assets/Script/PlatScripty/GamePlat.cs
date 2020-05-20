@@ -24,6 +24,8 @@ public class GamePlat : MonoBehaviour
     public GameObject _prefbPlatLevel;
 
     public int _levelgame;
+    bool _passlevel;
+
     void Awake()
     {
         _gameControl = Camera.main.GetComponent<GameControl>();
@@ -52,6 +54,7 @@ public class GamePlat : MonoBehaviour
 
     void PassLevel()
     {
+      
         switch (_levelgame)
         {
             case 0:
@@ -111,8 +114,15 @@ public class GamePlat : MonoBehaviour
        //------ Passou de level
         _levelgame++;
         StartCoroutine(_gameControl._hudControl.LevelOn(_levelgame));
-
-        
+        if (!_passlevel)
+        {
+            _passlevel = true;
+            _gameControl.LevelSlideTime();
+        }
+        else
+        {
+            _passlevel = false;
+        }
         if (_levelgame == 1)
         {
             PassLevel();

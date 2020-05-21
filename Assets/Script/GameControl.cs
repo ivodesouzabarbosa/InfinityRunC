@@ -84,6 +84,7 @@ public class GameControl : MonoBehaviour
     }
     public void LevelSlideTime (){
         _sldScriptyFire._mainSlider.maxValue = _sldScriptyFire._mainSlider.maxValue + 1;
+        //_sldScriptyFire._mainSlider.value = _sldScriptyFire._mainSlider.value - 1;
     }
 
 

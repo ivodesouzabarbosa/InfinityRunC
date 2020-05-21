@@ -21,7 +21,7 @@ public class MovePerson : MonoBehaviour
         _rig = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
         _soundObj = GetComponent<SoundObj>();
-
+        _rig.isKinematic = false;
 
     }
     void FixedUpdate()

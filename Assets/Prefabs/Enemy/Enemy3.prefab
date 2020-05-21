@@ -29,14 +29,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4976482182626805509}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.92, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0016581292, w: 0.9999986}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4976482183661626129}
   m_Father: {fileID: 4976482183395629135}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.19}
 --- !u!212 &4976482182626805519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -76,10 +76,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4865104576596349526, guid: a5c785c91b7f8314a9e945e0a01f9f5c,
+  m_Sprite: {fileID: -4165016554926007060, guid: 4543c90db9afd9d478e8a314bc61ec7f,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 5.12, y: 5.21}
@@ -122,9 +122,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.19866943, y: 0}
+  m_Offset: {x: 0.78, y: -2.13}
   serializedVersion: 2
-  m_Radius: 1.2580042
+  m_Radius: 5.1
 --- !u!114 &4976482182626805507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,9 +141,12 @@ MonoBehaviour:
   _c1: {fileID: 0}
   _c2: {fileID: 0}
   _enemeyJump: 1
+  _enemeyFly: 0
+  _valueFly: 0
   _forcePulo: 5
   _ground: 0
   _timeStart: 3
+  _timeStarFly: 0
   _checkDeath: 0
   posStart: {x: 0, y: 0}
   _restoreLife: 0
@@ -180,6 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _vRestart: {fileID: 4976482183661626129}
   Enemey: 1
+  _collider2D: {fileID: 0}
 --- !u!1 &4976482183395629120
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +209,7 @@ Transform:
   m_GameObject: {fileID: 4976482183395629120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.91, y: 2.73, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 4976482182626805508}
   m_Father: {fileID: 0}

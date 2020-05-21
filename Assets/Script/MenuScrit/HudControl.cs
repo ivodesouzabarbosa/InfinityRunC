@@ -125,6 +125,7 @@ public class HudControl : MonoBehaviour
     {
         _panelGameOver[2].GetComponent<Text>().text = "" + textGameOver;
         StartCoroutine(GameOverONTime(.25f));
+        _canvasGroup.interactable = true;
     }
     IEnumerator GameOverONTime(float waitTime)
     {

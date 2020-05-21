@@ -60,20 +60,21 @@ public class EnemyControl : MonoBehaviour
             {
                 if (_enemeyFly) 
                 {
+                   
                     _timeFly -= Time.deltaTime;
+                  //  _rigEnemy.velocity = new Vector2(_speed, _rigEnemy.velocity.y);
                     if (_timeFly < 0)
                     {
-                        _valueFly = _valueFly * -1;
-                    
+                        _valueFly = _valueFly * -1;                    
                         _timeFly = _timeStarFly;
                     }
                     _rigEnemy.velocity = new Vector2(_rigEnemy.velocity.x, _valueFly);
                 }
-                else
-                {
+               
                     _rigEnemy.velocity = new Vector2(_speed, _rigEnemy.velocity.y);
-                  
-                }
+
+                
+
             }
             else
             {
@@ -161,7 +162,10 @@ public class EnemyControl : MonoBehaviour
         if (!_enemeyJump &&( collision == _c1 || collision == _c2))
         {
             Turn();
+            Debug.Log("1");
+
         }
+       
    
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -174,6 +178,7 @@ public class EnemyControl : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") && !_enemeyJump)
         {
             Turn();
+            Debug.Log("2");
         }
     }
 

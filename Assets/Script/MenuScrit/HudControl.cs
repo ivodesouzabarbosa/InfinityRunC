@@ -19,6 +19,7 @@ public class HudControl : MonoBehaviour
     public CanvasGroup _canvasGroup;
     public Text _textLife;
     GameControl _gameControl;
+    SoundObj _soundObj;
 
     void Start()
     {
@@ -125,6 +126,7 @@ public class HudControl : MonoBehaviour
     {
         _panelGameOver[2].GetComponent<Text>().text = "" + textGameOver;
         StartCoroutine(GameOverONTime(.25f));
+        _gameControl._movePerson._stopPlayer = true;
         _canvasGroup.interactable = true;
     }
     IEnumerator GameOverONTime(float waitTime)

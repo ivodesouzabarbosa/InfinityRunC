@@ -10,6 +10,7 @@ public class ItemScript : MonoBehaviour
     public Camera _targetCamera;
     public bool _fireCheck;
     Vector3 _vecPos;
+    AudioSource _audioSource;
     // Collider2D _collider;
     void Start()
     {
@@ -18,6 +19,7 @@ public class ItemScript : MonoBehaviour
         _targetCamera = Camera.main.GetComponent<Camera>();
         _gameControl._itemList.Add(gameObject);
         _vecPos = transform.localPosition;
+        _audioSource = GetComponent<AudioSource>();
     }
     public void RestartItem()
     {
@@ -36,7 +38,8 @@ public class ItemScript : MonoBehaviour
             transform.localPosition = screenPosition + _gameControl.offset;
             _gameControl._sldScripty.MoveItem(transform.localPosition);
             _gameControl._sldScripty.RestaureSlider();
-            _gameControl._hudControl.Point();             
+            _gameControl._hudControl.Point();
+            _audioSource.Play();
         }
         if (collision.gameObject.CompareTag("Player") && _fireCheck)
         {
@@ -45,6 +48,7 @@ public class ItemScript : MonoBehaviour
             Vector2 screenPosition = _targetCamera.WorldToScreenPoint(_gameControl._movePerson.transform.position);
             transform.localPosition = screenPosition + _gameControl.offset;
             _gameControl._sldScriptyFire.MoveItem(transform.localPosition);
+            _audioSource.Play();
         }
 
     }

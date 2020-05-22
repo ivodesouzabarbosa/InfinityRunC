@@ -6,7 +6,6 @@ public class CoolGround : MonoBehaviour
 {
     // Start is called before the first frame update
     GameControl _gameControl;
-
     [SerializeField]
     LayerMask platlayerMask;
     void Start()
@@ -22,6 +21,7 @@ public class CoolGround : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             _gameControl._movePerson._ground = true;
+
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

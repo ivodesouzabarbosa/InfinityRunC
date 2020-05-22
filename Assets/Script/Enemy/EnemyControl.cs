@@ -162,7 +162,6 @@ public class EnemyControl : MonoBehaviour
         if (!_enemeyJump &&( collision == _c1 || collision == _c2))
         {
             Turn();
-            Debug.Log("1");
 
         }
        

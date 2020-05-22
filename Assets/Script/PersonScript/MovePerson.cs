@@ -16,6 +16,7 @@ public class MovePerson : MonoBehaviour
     public  bool _stopPlayer;
     public AudioClip _soundJump;
     SoundObj _soundObj;
+    bool _jumpDoubleCheck;
     void Start()
     {
         _rig = GetComponent<Rigidbody2D>();
@@ -50,8 +51,13 @@ public class MovePerson : MonoBehaviour
     {
         if (!_stopPlayer)// se true. p player fica imovel
         {
-            _movement = new Vector2(Input.GetAxis("Horizontal"), _rig.velocity.y);// retorna valor direto do teclado
-            _rig.velocity = new Vector2(_movement.x * _speed, _rig.velocity.y);
+            if (_ground)
+            {
+                // _movement = new Vector2(Input.GetAxis("Horizontal"), _rig.velocity.y);// retorna valor direto do teclado
+                 _movement = new Vector2(1, _rig.velocity.y);// retorna valor direto do teclado
+                _rig.velocity = new Vector2(_movement.x * _speed, _rig.velocity.y);
+            }
+          
 
             if (_movement.x > 0.001f)// condição para ativa o fliper do sprite do personagem
             {
@@ -77,13 +83,25 @@ public class MovePerson : MonoBehaviour
     }
     void JumpM() {
 
-        if (_ground && Input.GetButtonDown("Jump"))//checa se apertou do teclado e se esta tocando no chão para pular.
+        if (_ground && !_jumpDoubleCheck && Input.GetButtonDown("Jump"))//checa se apertou do teclado e se esta tocando no chão para pular.
         {
             _rig.AddForce(transform.up * _jumpForce * 10);
             _soundObj.StartSound(_soundJump);
+            Invoke("JumpDouble", .4f);
+            
+          
+        }
+        else if ( !_ground && _jumpDoubleCheck && Input.GetButtonDown("Jump"))
+        {
+            _rig.AddForce(transform.up * _jumpForce * 10);
+            _soundObj.StartSound(_soundJump);
+              _jumpDoubleCheck = false;
         }
         _anim.SetFloat("jumpSpeed", _movement.y);
         _anim.SetBool("Ground", _ground);
     }
-
+    void JumpDouble()
+    {       
+        _jumpDoubleCheck = true;
+    }
 }

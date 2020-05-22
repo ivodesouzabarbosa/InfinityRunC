@@ -11,13 +11,14 @@ public class HitEnemy : MonoBehaviour
     EnemyControl _enemyControl;
     public bool Enemey;
     public Collider2D _collider2D;
-
+    AudioSource _audioSource;
 
     void Start()
     {
         _gameControl = Camera.main.GetComponent<GameControl>();
         _enemyControl = GetComponent<EnemyControl>();
         _collider2D = GetComponent<Collider2D>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -27,8 +28,10 @@ public class HitEnemy : MonoBehaviour
             _collider2D.enabled = false;
             _gameControl.HitPlayer(_vRestart);
 
+
             _enemyControl.Stop(true);
             _gameControl.StopEnemeys(true);
+            _audioSource.Play();
 
         }    
     }  
@@ -38,10 +41,12 @@ public class HitEnemy : MonoBehaviour
         {
             _gameControl.HitPlayer(_vRestart);
             _gameControl.StopEnemeys(true);
+            _audioSource.Play();
         }
         else if (Enemey && collision.gameObject.CompareTag("Fire"))//Morte do inimigo quando tocar na bala
         {
             _enemyControl._checkDeath = true;
+            _audioSource.Play();
         }
     }
 }

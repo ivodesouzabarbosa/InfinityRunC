@@ -1,0 +1,997 @@
+fileFormatVersion: 2
+guid: feda0c18015b3284cabbc0da85254f9a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: RobotBoyWalk00
+  - first:
+      213: 21300002
+    second: RobotBoyWalk01
+  - first:
+      213: 21300004
+    second: RobotBoyWalk02
+  - first:
+      213: 21300006
+    second: RobotBoyWalk03
+  - first:
+      213: 21300008
+    second: RobotBoyWalk04
+  - first:
+      213: 21300010
+    second: RobotBoyWalk05
+  - first:
+      213: 21300012
+    second: RobotBoyWalk06
+  - first:
+      213: 21300014
+    second: RobotBoyWalk07
+  - first:
+      213: 21300016
+    second: RobotBoyWalk08
+  - first:
+      213: 21300018
+    second: RobotBoyWalk09
+  - first:
+      213: 21300020
+    second: RobotBoyWalk10
+  - first:
+      213: 21300022
+    second: RobotBoyWalk11
+  - first:
+      213: 21300024
+    second: RobotBoyWalk12
+  - first:
+      213: 21300026
+    second: RobotBoyWalk13
+  - first:
+      213: 21300028
+    second: RobotBoyWalk14
+  - first:
+      213: 21300030
+    second: RobotBoyWalk15
+  - first:
+      213: -669299962240809519
+    second: RobotBoyWalkSprite_0
+  - first:
+      213: -8837980460130348034
+    second: RobotBoyWalkSprite_1
+  - first:
+      213: 5709942351205253911
+    second: RobotBoyWalkSprite_2
+  - first:
+      213: 1145453890839250213
+    second: RobotBoyWalkSprite_3
+  - first:
+      213: -5148162042175684493
+    second: RobotBoyWalkSprite_4
+  - first:
+      213: 2492978493503434344
+    second: RobotBoyWalkSprite_5
+  - first:
+      213: 3164975681194524278
+    second: RobotBoyWalkSprite_6
+  - first:
+      213: 2053086926974103239
+    second: RobotBoyWalkSprite_7
+  - first:
+      213: -7465804608869120533
+    second: RobotBoyWalkSprite_8
+  - first:
+      213: -1919849576037193993
+    second: RobotBoyWalkSprite_9
+  - first:
+      213: -9204106528705652845
+    second: RobotBoyWalkSprite_10
+  - first:
+      213: -3247795628690493899
+    second: RobotBoyWalkSprite_11
+  - first:
+      213: -7268006367689575282
+    second: RobotBoyWalkSprite_12
+  - first:
+      213: 7993968897650660958
+    second: RobotBoyWalkSprite_13
+  - first:
+      213: 4649278483036679748
+    second: RobotBoyWalkSprite_14
+  - first:
+      213: 3131658594535268754
+    second: RobotBoyWalkSprite_15
+  - first:
+      213: -5546981941120187936
+    second: RobotBoyWalkSprite_16
+  - first:
+      213: 4692967126157617107
+    second: RobotBoyWalkSprite_17
+  - first:
+      213: 7576090678022852261
+    second: RobotBoyWalkSprite_18
+  - first:
+      213: -7741392068516953162
+    second: RobotBoyWalkSprite_19
+  - first:
+      213: -4606263206622286281
+    second: RobotBoyWalkSprite_20
+  - first:
+      213: 8543122543311570084
+    second: RobotBoyWalkSprite_21
+  - first:
+      213: 7005633243171733473
+    second: RobotBoyWalkSprite_22
+  - first:
+      213: 5605101759348028133
+    second: RobotBoyWalkSprite_23
+  - first:
+      213: -81239601443134316
+    second: RobotBoyWalkSprite_24
+  - first:
+      213: 782840253580502012
+    second: RobotBoyWalkSprite_25
+  - first:
+      213: -1084196581918722585
+    second: RobotBoyWalkSprite_26
+  - first:
+      213: -413809637076622302
+    second: RobotBoyWalkSprite_27
+  - first:
+      213: 5578502895244526218
+    second: RobotBoyWalkSprite_28
+  - first:
+      213: 2907276213902671965
+    second: RobotBoyWalkSprite_29
+  - first:
+      213: 7007833967749199154
+    second: RobotBoyWalkSprite_30
+  - first:
+      213: -8173548681967744497
+    second: RobotBoyWalkSprite_31
+  - first:
+      213: -2962686447614029606
+    second: RobotBoyWalkSprite_32
+  - first:
+      213: -2731944043488572834
+    second: RobotBoyWalkSprite_33
+  - first:
+      213: -4437685316013280983
+    second: RobotBoyWalkSprite_34
+  - first:
+      213: -5561270532319125725
+    second: RobotBoyWalkSprite_35
+  - first:
+      213: -2373721136261911137
+    second: RobotBoyWalkSprite_36
+  - first:
+      213: -7542899085076057576
+    second: RobotBoyWalkSprite_37
+  - first:
+      213: -6316640462653991567
+    second: RobotBoyWalkSprite_38
+  - first:
+      213: -7814996579582657238
+    second: RobotBoyWalkSprite_39
+  - first:
+      213: -6105470267403717430
+    second: RobotBoyWalkSprite_40
+  - first:
+      213: 3694110094629410550
+    second: RobotBoyWalkSprite_41
+  - first:
+      213: 2602249086720406021
+    second: RobotBoyWalkSprite_42
+  - first:
+      213: 2896003206078384378
+    second: RobotBoyWalkSprite_43
+  - first:
+      213: 3186730653640042636
+    second: RobotBoyWalkSprite_44
+  - first:
+      213: -8109631920719777974
+    second: RobotBoyWalkSprite_45
+  - first:
+      213: 4556212294314563656
+    second: RobotBoyWalkSprite_46
+  - first:
+      213: -770864466532290305
+    second: RobotBoyWalkSprite_47
+  - first:
+      213: 8417487697461283993
+    second: RobotBoyWalkSprite_48
+  - first:
+      213: -2268258584496408357
+    second: RobotBoyWalkSprite_49
+  - first:
+      213: -8445543128096368292
+    second: RobotBoyWalkSprite_50
+  - first:
+      213: 4918277123259698242
+    second: RobotBoyWalkSprite_51
+  - first:
+      213: 2934779697432130359
+    second: RobotBoyWalkSprite_52
+  - first:
+      213: 6984599958004896163
+    second: RobotBoyWalkSprite_53
+  - first:
+      213: -5789518076305396081
+    second: RobotBoyWalkSprite_54
+  - first:
+      213: 3149944798278292240
+    second: RobotBoyWalkSprite_55
+  - first:
+      213: 5510080370765370183
+    second: RobotBoyWalkSprite_56
+  - first:
+      213: 966495776899143668
+    second: RobotBoyWalkSprite_57
+  - first:
+      213: -2533500018078973830
+    second: RobotBoyWalkSprite_58
+  - first:
+      213: 228999369885239478
+    second: RobotBoyWalkSprite_59
+  - first:
+      213: -8455133784601945198
+    second: RobotBoyWalkSprite_60
+  - first:
+      213: 5881580690149587438
+    second: RobotBoyWalkSprite_61
+  - first:
+      213: 146983972395012091
+    second: RobotBoyWalkSprite_62
+  - first:
+      213: -4330523083646422296
+    second: RobotBoyWalkSprite_63
+  - first:
+      213: -2140388148036857300
+    second: RobotBoyWalkSprite_64
+  - first:
+      213: -3028471944360752156
+    second: RobotBoyWalkSprite_65
+  - first:
+      213: -8422396416782630014
+    second: RobotBoyWalkSprite_66
+  - first:
+      213: 2586930023029210880
+    second: RobotBoyWalkSprite_67
+  - first:
+      213: 1202889451779262113
+    second: RobotBoyWalkSprite_68
+  - first:
+      213: 3818015192282091955
+    second: RobotBoyWalkSprite_69
+  - first:
+      213: -6083073348053377157
+    second: RobotBoyWalkSprite_70
+  - first:
+      213: 3995362000047576372
+    second: RobotBoyWalkSprite_71
+  - first:
+      213: -3165214383037546303
+    second: RobotBoyWalkSprite_72
+  - first:
+      213: -8426945838846553606
+    second: RobotBoyWalkSprite_73
+  - first:
+      213: -2762774469486625685
+    second: RobotBoyWalkSprite_74
+  - first:
+      213: 7086613993879409363
+    second: RobotBoyWalkSprite_75
+  - first:
+      213: 6168059093814886668
+    second: RobotBoyWalkSprite_76
+  - first:
+      213: 1900427964809791537
+    second: RobotBoyWalkSprite_77
+  - first:
+      213: -2827830284285542739
+    second: RobotBoyWalkSprite_78
+  - first:
+      213: 89813835487722049
+    second: RobotBoyWalkSprite_79
+  - first:
+      213: -8179258243569044896
+    second: RobotBoyWalkSprite_80
+  - first:
+      213: -4936750029455298906
+    second: RobotBoyWalkSprite_81
+  - first:
+      213: 1567585330465940037
+    second: RobotBoyWalkSprite_82
+  - first:
+      213: 5827547681843940082
+    second: RobotBoyWalkSprite_83
+  - first:
+      213: -8264573029320745348
+    second: RobotBoyWalkSprite_84
+  - first:
+      213: 7431427409194022358
+    second: RobotBoyWalkSprite_85
+  - first:
+      213: 3229985045040666845
+    second: RobotBoyWalkSprite_86
+  - first:
+      213: 3997068147353308954
+    second: RobotBoyWalkSprite_87
+  - first:
+      213: -5217116417357222292
+    second: RobotBoyWalkSprite_88
+  - first:
+      213: 1212759207209817443
+    second: RobotBoyWalkSprite_89
+  - first:
+      213: 3384215210242391424
+    second: RobotBoyWalkSprite_90
+  - first:
+      213: 451377464153057847
+    second: RobotBoyWalkSprite_91
+  - first:
+      213: -4823345628690131916
+    second: RobotBoyWalkSprite_92
+  - first:
+      213: 2198730855011081201
+    second: RobotBoyWalkSprite_93
+  - first:
+      213: 7677475054727641209
+    second: RobotBoyWalkSprite_94
+  - first:
+      213: 4907820205894532703
+    second: RobotBoyWalkSprite_95
+  - first:
+      213: -3925432020603641548
+    second: RobotBoyWalkSprite_96
+  - first:
+      213: 8999286980542167263
+    second: RobotBoyWalkSprite_97
+  - first:
+      213: 91437420827067861
+    second: RobotBoyWalkSprite_98
+  - first:
+      213: -7017564128504950667
+    second: RobotBoyWalkSprite_99
+  - first:
+      213: 5468403893505152744
+    second: RobotBoyWalkSprite_100
+  - first:
+      213: -5367704114324685832
+    second: RobotBoyWalkSprite_101
+  - first:
+      213: -7552243727498138004
+    second: RobotBoyWalkSprite_102
+  - first:
+      213: 5994169623155323297
+    second: RobotBoyWalkSprite_103
+  - first:
+      213: 8987559290276262539
+    second: RobotBoyWalkSprite_104
+  - first:
+      213: 3879915720226245867
+    second: RobotBoyWalkSprite_105
+  - first:
+      213: -6175217491294073332
+    second: RobotBoyWalkSprite_106
+  - first:
+      213: -4836030150707358777
+    second: RobotBoyWalkSprite_107
+  - first:
+      213: -4561677387355797990
+    second: RobotBoyWalkSprite_108
+  - first:
+      213: 9120415152304842577
+    second: RobotBoyWalkSprite_109
+  - first:
+      213: 2063879954725234990
+    second: RobotBoyWalkSprite_110
+  - first:
+      213: 9061259398591182219
+    second: RobotBoyWalkSprite_111
+  - first:
+      213: 8048677709115303928
+    second: RobotBoyWalkSprite_112
+  - first:
+      213: 2125215394870300535
+    second: RobotBoyWalkSprite_113
+  - first:
+      213: -6539892481116535699
+    second: RobotBoyWalkSprite_114
+  - first:
+      213: -8201826278578999101
+    second: RobotBoyWalkSprite_115
+  - first:
+      213: -7128439906033607258
+    second: RobotBoyWalkSprite_116
+  - first:
+      213: 134127470662666711
+    second: RobotBoyWalkSprite_117
+  - first:
+      213: 763765963298072068
+    second: RobotBoyWalkSprite_118
+  - first:
+      213: 5490657927992434591
+    second: RobotBoyWalkSprite_119
+  - first:
+      213: -2901688759412070771
+    second: RobotBoyWalkSprite_120
+  - first:
+      213: 4313057831629458140
+    second: RobotBoyWalkSprite_121
+  - first:
+      213: 7320838563667646601
+    second: RobotBoyWalkSprite_122
+  - first:
+      213: -4943866499323894659
+    second: RobotBoyWalkSprite_123
+  - first:
+      213: -4940730931754050431
+    second: RobotBoyWalkSprite_124
+  - first:
+      213: -8665083400916349883
+    second: RobotBoyWalkSprite_125
+  - first:
+      213: -7966953629965666706
+    second: RobotBoyWalkSprite_126
+  - first:
+      213: -6844198754691931643
+    second: RobotBoyWalkSprite_127
+  - first:
+      213: 5028169913803843037
+    second: RobotBoyWalkSprite_128
+  - first:
+      213: -8392108621534074253
+    second: RobotBoyWalkSprite_129
+  - first:
+      213: -1484257083251792205
+    second: RobotBoyWalkSprite_130
+  - first:
+      213: 5388988844108709906
+    second: RobotBoyWalkSprite_131
+  - first:
+      213: 8242436179211963250
+    second: RobotBoyWalkSprite_132
+  - first:
+      213: -8331696291616986812
+    second: RobotBoyWalkSprite_133
+  - first:
+      213: -5188692344734472232
+    second: RobotBoyWalkSprite_134
+  - first:
+      213: 7141285848769548646
+    second: RobotBoyWalkSprite_135
+  - first:
+      213: -4430016966840822028
+    second: RobotBoyWalkSprite_136
+  - first:
+      213: -1508193001845236786
+    second: RobotBoyWalkSprite_137
+  - first:
+      213: 6647602110459530517
+    second: RobotBoyWalkSprite_138
+  - first:
+      213: 1139531420662789792
+    second: RobotBoyWalkSprite_139
+  - first:
+      213: -2519190958454675683
+    second: RobotBoyWalkSprite_140
+  - first:
+      213: 25544634467632711
+    second: RobotBoyWalkSprite_141
+  - first:
+      213: 8391258961250964023
+    second: RobotBoyWalkSprite_142
+  - first:
+      213: 8732097027375898472
+    second: RobotBoyWalkSprite_143
+  - first:
+      213: 3260881799163044896
+    second: RobotBoyWalkSprite_144
+  - first:
+      213: 5202382711146504071
+    second: RobotBoyWalkSprite_145
+  - first:
+      213: -6467215245000947546
+    second: RobotBoyWalkSprite_146
+  - first:
+      213: -7097674342019305294
+    second: RobotBoyWalkSprite_147
+  - first:
+      213: 9104357468871065239
+    second: RobotBoyWalkSprite_148
+  - first:
+      213: 5079502657113303390
+    second: RobotBoyWalkSprite_149
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 2
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: BlackBerry
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WP8
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1755.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5447efa3b26b6f0800000000000000
+      internalID: -669299962240809519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1755.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3561ed89f295580800000000000000
+      internalID: -8837980460130348034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_2
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1755.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7134c8bd05acd3f40800000000000000
+      internalID: 5709942351205253911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_3
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1755.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525001eae3875ef00800000000000000
+      internalID: 1145453890839250213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1755.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37008f516ed0e88b0800000000000000
+      internalID: -5148162042175684493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1755.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ee5f14bb6d89220800000000000000
+      internalID: 2492978493503434344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_6
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 1755.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e79500d904ceb20800000000000000
+      internalID: 3164975681194524278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1463.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce2a4faea70e7c10800000000000000
+      internalID: 2053086926974103239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_8
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1463.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5c1e58342246890800000000000000
+      internalID: -7465804608869120533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_9
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1463.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f66e1e7bf25b55e0800000000000000
+      internalID: -1919849576037193993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_10
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1463.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39755a9a0e1744080800000000000000
+      internalID: -9204106528705652845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_11
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1460
+        width: 293
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e26d055138de2d0800000000000000
+      internalID: -3247795628690493899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 1460
+        width: 293
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84f59457bad22b90800000000000000
+      internalID: -7268006367689575282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1470
+        width: 293
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e561df9cb5840fe60800000000000000
+      internalID: 7993968897650660958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1171.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ea44bb52e858040800000000000000
+      internalID: 4649278483036679748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RobotBoyWalkSprite_15
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 1171.4286
+        width: 292.57144
+        height: 292.57144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291e21546e2e57b20800000000000000
+      internalID: 3131658594535268754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

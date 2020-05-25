@@ -20,7 +20,7 @@ public class CoolGround : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            _gameControl._movePerson._ground = true;
+          // _gameControl._movePerson._ground = true;
 
         }
     }
@@ -28,7 +28,7 @@ public class CoolGround : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            _gameControl._movePerson._ground = false;
+          //  _gameControl._movePerson._ground = false;
         }
     }
 }

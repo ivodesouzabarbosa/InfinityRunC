@@ -11,18 +11,26 @@ public class MovePerson : MonoBehaviour
     public float _jumpForce;
     Animator _anim;
     public bool _ground;
+    public bool _jumpDoubleCheck;
     public Vector2 _vPosRestart;
     Vector2 _posRestart;
     public  bool _stopPlayer;
     public AudioClip _soundJump;
     SoundObj _soundObj;
-    bool _jumpDoubleCheck;
+
+    public Collider2D _collider2D;
+    public float _extraH;
+    public LayerMask _layerMask;
+    public Transform _posStartRay;
+
     void Start()
     {
         _rig = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
         _soundObj = GetComponent<SoundObj>();
         _rig.isKinematic = false;
+        _collider2D = GetComponent<Collider2D>();
+      //  Physics2D.IgnoreLayerCollision(0,8,true);
 
     }
     void FixedUpdate()
@@ -49,12 +57,13 @@ public class MovePerson : MonoBehaviour
 
     void MovePersonHorixontal()
     {
+       _ground= IsGroundCheck();
         if (!_stopPlayer)// se true. p player fica imovel
         {
             if (_ground)
             {
-                // _movement = new Vector2(Input.GetAxis("Horizontal"), _rig.velocity.y);// retorna valor direto do teclado
-                 _movement = new Vector2(1, _rig.velocity.y);// retorna valor direto do teclado
+                _movement = new Vector2(Input.GetAxis("Horizontal"), _rig.velocity.y);// retorna valor direto do teclado
+                // _movement = new Vector2(1, _rig.velocity.y);// retorna valor direto do teclado
                 _rig.velocity = new Vector2(_movement.x * _speed, _rig.velocity.y);
             }
           
@@ -91,17 +100,51 @@ public class MovePerson : MonoBehaviour
             
           
         }
-        else if ( !_ground && _jumpDoubleCheck && Input.GetButtonDown("Jump"))
+        if ( !_ground && _jumpDoubleCheck && Input.GetButtonDown("Jump"))
         {
-            _rig.AddForce(transform.up * _jumpForce * 10);
+
+            if (_rig.velocity.y < 0){
+       
+                _rig.AddForce(transform.up * _jumpForce * 2 * -(_rig.velocity.y));
+            }
+            else
+            {
+                _rig.AddForce(transform.up * _jumpForce * 6);
+            }
             _soundObj.StartSound(_soundJump);
-              _jumpDoubleCheck = false;
+             _jumpDoubleCheck = false;
+            CancelInvoke();
+           // CancelInvoke();
         }
         _anim.SetFloat("jumpSpeed", _movement.y);
         _anim.SetBool("Ground", _ground);
+
+    }
+
+    private bool IsGroundCheck()
+    {
+        RaycastHit2D raycastHit2D = Physics2D.Raycast(_collider2D.bounds.center, Vector2.down,(_collider2D.bounds.extents.y + _extraH), _layerMask);
+        Color rayColor;
+  
+        if (raycastHit2D.collider !=null)
+        {
+            rayColor = Color.green;
+            _ground = false;
+        }
+        else
+        {
+            rayColor = Color.red;
+            _ground = true;
+           // _jumpDoubleCheck = false;
+        }
+
+        Debug.DrawRay(_collider2D.bounds.center, Vector2.down * (_collider2D.bounds.extents.y + _extraH), rayColor);
+       // Debug.Log(raycastHit2D.collider);
+        return raycastHit2D.collider != null;
     }
     void JumpDouble()
     {       
         _jumpDoubleCheck = true;
+ 
     }
 }

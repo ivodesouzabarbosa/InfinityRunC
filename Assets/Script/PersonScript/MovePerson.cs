@@ -58,12 +58,16 @@ public class MovePerson : MonoBehaviour
     void MovePersonHorixontal()
     {
        _ground= IsGroundCheck();
+        if (_jumpDoubleCheck == true)
+        {
+            Invoke("JumpDoubleFalse", 1f);
+        }
         if (!_stopPlayer)// se true. p player fica imovel
         {
             if (_ground)
             {
                 _movement = new Vector2(Input.GetAxis("Horizontal"), _rig.velocity.y);// retorna valor direto do teclado
-                // _movement = new Vector2(1, _rig.velocity.y);// retorna valor direto do teclado
+                //_movement = new Vector2(1, _rig.velocity.y);// retorna valor direto do teclado
                 _rig.velocity = new Vector2(_movement.x * _speed, _rig.velocity.y);
             }
           
@@ -102,6 +106,7 @@ public class MovePerson : MonoBehaviour
         }
         if ( !_ground && _jumpDoubleCheck && Input.GetButtonDown("Jump"))
         {
+            _jumpDoubleCheck = false;
 
             if (_rig.velocity.y < 0){
        
@@ -123,7 +128,7 @@ public class MovePerson : MonoBehaviour
 
     private bool IsGroundCheck()
     {
-        RaycastHit2D raycastHit2D = Physics2D.Raycast(_collider2D.bounds.center, Vector2.down,(_collider2D.bounds.extents.y + _extraH), _layerMask);
+        RaycastHit2D raycastHit2D = Physics2D.Raycast(_posStartRay.transform.position, Vector2.left,(_posStartRay.position.x + _extraH), _layerMask);
         Color rayColor;
   
         if (raycastHit2D.collider !=null)
@@ -138,7 +143,7 @@ public class MovePerson : MonoBehaviour
            // _jumpDoubleCheck = false;
         }
 
-        Debug.DrawRay(_collider2D.bounds.center, Vector2.down * (_collider2D.bounds.extents.y + _extraH), rayColor);
+        Debug.DrawRay(_posStartRay.transform.position, Vector2.left * (_posStartRay.position.x + _extraH), rayColor);
        // Debug.Log(raycastHit2D.collider);
         return raycastHit2D.collider != null;
     }
@@ -146,5 +151,11 @@ public class MovePerson : MonoBehaviour
     {       
         _jumpDoubleCheck = true;
  
+    }
+    void JumpDoubleFalse()
+    {
+        _jumpDoubleCheck = false;
+        CancelInvoke("umpDoubleFalse");
+
     }
 }

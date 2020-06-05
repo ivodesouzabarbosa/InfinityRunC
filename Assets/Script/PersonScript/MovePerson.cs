@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovePerson : MonoBehaviour
 {
     public Vector2 _movement;
-    Rigidbody2D _rig;
+    public Rigidbody2D _rig;
     public float _speed;
     public SpriteRenderer _imgPerson;
     public float _jumpForce;

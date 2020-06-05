@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameControl : MonoBehaviour
 {
@@ -20,6 +21,11 @@ public class GameControl : MonoBehaviour
 
     public Vector2 offset;
 
+
+    public String _gameOver1;
+    public String _gameOver2;
+    public String _dose;
+    public String _doses;
 
     private void Awake()
     {
@@ -79,7 +85,7 @@ public class GameControl : MonoBehaviour
         else if (_life <= 0)
         {
             _movePerson.VectorTempPos(_vRestart);
-            _hudControl.GameOverON("Suas doses de álcool para limpar-se, acabou. Logo, não é seguro continuar na rua!");
+            _hudControl.GameOverON(_gameOver1);
         }
     }
     public void LevelSlideTime (){

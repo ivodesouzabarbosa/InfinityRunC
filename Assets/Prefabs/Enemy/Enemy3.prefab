@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4976482182626805504}
   - component: {fileID: 4976482182626805518}
   - component: {fileID: 5178724348460834215}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a4a2ea096106a6e44a01e39ef3147ea1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4976482183395629135}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4976482183661626129}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PosRestart
   m_TagString: Untagged
   m_Icon: {fileID: 0}

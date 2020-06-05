@@ -139,7 +139,7 @@ public class SldScripty : MonoBehaviour
             {
                 _checkLife = true;
                 _gameControl.StopEnemeys(true);
-                _gameControl._hudControl.GameOverON("Seu Álcool em gel acabou, é inseguro continuar na Rua");
+                _gameControl._hudControl.GameOverON(_gameControl._gameOver2);
 
             }
 

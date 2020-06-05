@@ -48,10 +48,13 @@ public class EnemyControl : MonoBehaviour
         _rigEnemy.velocity = new Vector2(_speed, 0);
         _timeTemp=_timeStart; 
         _timeFly = _timeStarFly;
+        Physics2D.IgnoreLayerCollision(9, 10,true);
 
 
 
-}
+
+
+    }
     private void Update()
     {
         if (!_checkDeath)

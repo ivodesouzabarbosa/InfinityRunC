@@ -62,6 +62,7 @@ public class HudControl : MonoBehaviour
         _gameControl.MovePersonON(true);//liberar movimento player
 
         _gameControl._sldScripty.PauseSliderON(false);
+        StopAllCoroutines();
 
     }
     public void BackGameOn(bool on)
@@ -72,11 +73,11 @@ public class HudControl : MonoBehaviour
     {
         if (_gameControl._life != 1)
         {
-            _textBackGame.text = "Resta " + _gameControl._life + " doses de álcool para limpar-se";
+            _textBackGame.text = "Resta " + _gameControl._life + " " + _gameControl._doses;
         }
         else
         {
-            _textBackGame.text = "Resta " + _gameControl._life + " dose de álcool para limpar-se";
+            _textBackGame.text = "Resta " + _gameControl._life + " " + _gameControl._dose;
         }
 
     }
@@ -102,9 +103,13 @@ public class HudControl : MonoBehaviour
                 _panelBackGame[i].DOScale(1f, waitTime);
             }
             _canvasGroup.interactable = true;
+            StopAllCoroutines();
+            Time.timeScale = 0;
 
         }
         else {
+            Time.timeScale = 1;
+            _canvasGroup.interactable = false;
             _backGround.GetComponent<Image>().DOFade(0, waitTime);
             for (int i = 0; i < _panelStartGame.Count; i++)
             {
@@ -113,17 +118,18 @@ public class HudControl : MonoBehaviour
                 yield return new WaitForSeconds(waitTime);
                 _panelBackGame[i].DOScale(0f, waitTime);
             }
-            _canvasGroup.interactable = false;
+           
             _panelBackGame[0].gameObject.SetActive(false);
             yield return new WaitForSeconds(1);
             _gameControl._movePerson._stopPlayer = false;
             _gameControl._sldScripty.PauseSliderON(false);
             _gameControl._sldScripty._mainSlider.value = _gameControl._sldScripty._mainSlider.maxValue;
-
+            StopAllCoroutines();
         }  
     }
     public void GameOverON(string textGameOver)
     {
+        Time.timeScale = 1;
         _panelGameOver[2].GetComponent<Text>().text = "" + textGameOver;
         StartCoroutine(GameOverONTime(.25f));
         _gameControl._movePerson._stopPlayer = true;
@@ -148,6 +154,7 @@ public class HudControl : MonoBehaviour
             yield return new WaitForSeconds(waitTime);
             _panelGameOver[i].DOScale(1f, waitTime);
         }
+        StopAllCoroutines();
 
     }
 
